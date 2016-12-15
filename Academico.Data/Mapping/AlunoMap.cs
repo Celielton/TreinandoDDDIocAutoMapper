@@ -8,8 +8,9 @@ namespace Academico.Data.Mapping
         public AlunoMap()
         {
             HasKey(i => i.Id);
+            Property(i => i.IdCurso).HasColumnName("IdCurso");
+            HasRequired(i => i.Curso).WithMany(t => t.Alunos).HasForeignKey(i => i.IdCurso);
 
-            HasRequired(i => i.Curso).WithMany().HasForeignKey(i => i.IdCurso);
         }
     }
 }

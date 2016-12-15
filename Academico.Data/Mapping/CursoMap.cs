@@ -10,8 +10,6 @@ namespace Academico.Data.Mapping
         {
             HasKey(i => i.Id);
 
-            HasRequired(i => i.Aluno).WithMany().HasForeignKey(i => i.IdAluno);
-
         }
     }
 }

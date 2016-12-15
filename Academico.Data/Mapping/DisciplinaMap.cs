@@ -10,11 +10,11 @@ namespace Academico.Data.Mapping
             HasKey(i => i.Id);
 
             HasRequired(i => i.Curso)
-                .WithMany()
+                .WithMany(i => i.Disciplinas)
                 .HasForeignKey(I => I.IdCurso);
 
             HasRequired(i => i.Professor)
-                .WithMany()
+                .WithMany(i => i.Disciplinas)
                 .HasForeignKey(i => i.IdProfessor);
         }
     }

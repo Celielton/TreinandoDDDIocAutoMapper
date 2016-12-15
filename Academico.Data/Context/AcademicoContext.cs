@@ -20,7 +20,17 @@ namespace Academico.Data.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
+            //TODO: Usar autofac
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+            modelBuilder.Conventions.Remove<OneToOneConstraintIntroductionConvention>();
+
+
+            modelBuilder.Properties().Where(i => i.Name == "Id" +  i.ReflectedType.Name).Configure(p => p.IsKey());
+
+
 
             modelBuilder.Configurations.Add(new AlunoMap());
             modelBuilder.Configurations.Add(new ProfessorMap());
