@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Data", "Academico
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Web", "Academico.Web\Academico.Web.csproj", "{6BFCBBED-E5C1-424F-A869-D5EA05AD8C58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academico.Aplication", "Academico.Aplication\Academico.Aplication.csproj", "{70389D04-953E-4040-8A82-DF958EA0792A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{6BFCBBED-E5C1-424F-A869-D5EA05AD8C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BFCBBED-E5C1-424F-A869-D5EA05AD8C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BFCBBED-E5C1-424F-A869-D5EA05AD8C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70389D04-953E-4040-8A82-DF958EA0792A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70389D04-953E-4040-8A82-DF958EA0792A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70389D04-953E-4040-8A82-DF958EA0792A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70389D04-953E-4040-8A82-DF958EA0792A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +51,6 @@ Global
 		{E1C8B80E-6C12-4879-A18C-81F13D33C04B} = {F5DA8114-3111-4022-96D9-A1FC52A5BC43}
 		{A791EFF5-1215-451C-9B53-5F91BA2CF433} = {B4B7CF9E-ECE6-41F7-BBDB-BA02871202C7}
 		{6BFCBBED-E5C1-424F-A869-D5EA05AD8C58} = {71FF42D9-86B9-43C5-B031-A42D387B188D}
+		{70389D04-953E-4040-8A82-DF958EA0792A} = {65DAEE76-4B65-4F73-A20B-8C92CBCEC5AA}
 	EndGlobalSection
 EndGlobal
